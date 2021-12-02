@@ -1,0 +1,17 @@
+=responsive($media)
+
+    @if $media == big-tablet
+        @media only screen and (max-width: 1200px)
+            @content
+
+    @if $media == tablet
+        @media only screen and (max-width: 1024px)
+            @content
+
+    @if $media == small-tablet
+        @media only screen and (max-width: 800px)
+            @content
+
+    @if $media == mobile
+        @media only screen and (max-width: 639px)
+            @content

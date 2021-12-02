@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/style.css">    
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-window noselect">
+
+            <div class="weather-search">
+                <div id="in" class="search-input">
+                    <input type="text" placeholder="Поиск города">
+                    <div id="list" class="match-list"></div>
+                    <div class="search-btn">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em"
+                            width="1em" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
+                                clip-rule="evenodd"></path>
+                            <path fill-rule="evenodd"
+                                d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="current-forecast">
+                <div class="current-city"></div>
+                <div class="current-temp"></div>
+                <div class="current-description"></div>
+                <div class="current-icon">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+
+            <div class="daily-forecast">
+
+                <div class="daily-card">
+                    <div class="daily-day">Сегодня</div>
+                    <div class="daily-icon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+
+                <div class="daily-card">
+                    <div class="daily-day">Завтра</div>
+                    <div class="daily-icon">
+                        <img src="icons/01d.svg" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+
+                <div class="daily-card">
+                    <div class="daily-day"></div>
+                    <div class="daily-icon">
+                        <img src="icons/01d.svg" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+
+                <div class="daily-card">
+                    <div class="daily-day"></div>
+                    <div class="daily-icon">
+                        <img src="icons/01d.svg" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+
+                <div class="daily-card">
+                    <div class="daily-day"></div>
+                    <div class="daily-icon">
+                        <img src="icons/01d.svg" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+
+                <div class="daily-card">
+                    <div class="daily-day"></div>
+                    <div class="daily-icon">
+                        <img src="icons/01d.svg" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+
+                <div class="daily-card">
+                    <div class="daily-day"></div>
+                    <div class="daily-icon">
+                        <img src="icons/01d.svg" alt="">
+                    </div>
+                    <div class="daily-temp"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup noselect">
+        <div class="popup-close-area"></div>
+        <div class="popup-body">
+            <div class="popup-content">
+                <div class="popup-city">
+                    <h1></h1>
+                </div>
+                <div class="popup-day"></div>
+                <div class="popup-temp">
+                    <h1></h1>
+                    <img src="icons/01d.svg">
+                    <div class="popup-description">
+                        <div class="description"></div>
+                        <div class="feels-like"></div>
+                    </div>
+                </div>
+                <div class="popup-other-info">
+                    <div class="wind-speed">
+                        <span>Скорость ветра</span>
+                        <span class="speed">20 м/с</span>
+                    </div>
+                    <div class="humidity">
+                        <span>Влажность</span>
+                        <span class="hum">80%</span>
+                    </div>
+                    <div class="pressure">
+                        <span>Давление</span>
+                        <span class="pres">750мм рт.с</span>
+                    </div>
+                </div>
+
+                <div class="popup-hourly">
+                    <div class="hourly-line">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="script/forecast.js"></script>
+
+</body>
+
+</html>
+
