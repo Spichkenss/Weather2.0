@@ -102,9 +102,19 @@ document.querySelector(".search-input input").addEventListener("keyup", function
         weather.fetchWeather(document.querySelector('.search-input input').value);
         document.querySelector('.search-input input').value = ""
     }
-});
+})
 
 // Листенер на клик по черной зоне для закрытия попапа
 document.querySelector('.popup-close-area').addEventListener('click', function () {
     document.querySelector('.popup').classList.remove('opened');
 });
+
+document.querySelector('.search-input input').addEventListener('change', function(){
+    document.querySelectorAll('.match').forEach(match => {
+        match.addEventListener('click', function(){
+            document.querySelector('.search-input input').value = match.innerText;
+            document.querySelector('.match-list').innerHTML = "";
+        })
+    })
+})
+
