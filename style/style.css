@@ -146,10 +146,10 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   top: 60px;
-  left: 20px;
-  width: 150px;
+  left: 30px;
+  width: 200px;
   max-height: 200px;
-  border-radius: 10px;
+  border-radius: 0 0 5px 5px;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -160,6 +160,7 @@ body {
 
 .weather-search .search-input .match-list .match:hover {
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
 }
 
 .weather-search .search-input .match-list .match:last-child {

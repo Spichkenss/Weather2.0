@@ -2,6 +2,8 @@ let weather = {
     API: "a59577e36c57e9eaea429888e7636f13",
     // Запрос текущего прогноза 
     fetchWeather: function (city) {
+        document.querySelector('.match-list').innerHTML = "";
+        document.querySelector('.search-input input').value = "";
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=ru&appid=${this.API}`)
             .then((response) => response.json())
             .then((data) => {
@@ -90,7 +92,7 @@ let weather = {
 // Запрос при загрузке страницы
 weather.fetchWeather("Moscow");
 
-// Листенер на клик
+// Листенер на клик по лупе
 document.querySelector('.search-btn').addEventListener('click', function () {
     weather.fetchWeather(document.querySelector('.search-input input').value);
     document.querySelector('.search-input input').value = "";
@@ -109,11 +111,12 @@ document.querySelector('.popup-close-area').addEventListener('click', function (
     document.querySelector('.popup').classList.remove('opened');
 });
 
+// Открывает даталист при непустом инпуте
 document.querySelector('.search-input input').addEventListener('change', function(){
     document.querySelectorAll('.match').forEach(match => {
         match.addEventListener('click', function(){
-            document.querySelector('.search-input input').value = match.innerText;
-            document.querySelector('.match-list').innerHTML = "";
+            let query = match.innerText;
+            weather.fetchWeather(query);
         })
     })
 })
