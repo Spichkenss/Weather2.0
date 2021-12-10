@@ -4,7 +4,7 @@ let weather = {
     fetchWeather: function (city) {
         document.querySelector('.match-list').innerHTML = "";
         document.querySelector('.search-input input').value = "";
-        fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=ru&appid=${this.API}`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=ru&appid=${this.API}`)
             .then((response) => response.json())
             .then((data) => {
                 console.log(data); // Для разработки

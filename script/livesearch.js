@@ -1,3 +1,4 @@
+// Обращаемся к полю ввода и сохраняем его в соответствующую переменную
 const search = document.querySelector('.search-input input');
 const matchList = document.querySelector('.match-list');
 
