@@ -52,6 +52,8 @@ body
         width: 600px
     +responsive(mobile)
         width: 500px
+    +responsive(small-mobile)
+        width: 400px
 
 .noselect
     -moz-user-select: none
@@ -67,7 +69,9 @@ body
     overflow: hidden
     padding: 30px 0
     box-shadow: 0px 0px 5px 5px #ffffff50
-    text-align: 
+    text-align: center
+    +responsive(small-height)
+        transform: scale(0.8)
 
 // Поисковая строка и кнопка
 .weather-search
