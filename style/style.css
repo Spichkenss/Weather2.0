@@ -65,6 +65,7 @@ body {
           align-items: center;
   width: 1170px;
   height: 100vh;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -106,7 +107,6 @@ body {
 }
 
 .weather-window {
-  overflow: hidden;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 30px;
   overflow: hidden;
