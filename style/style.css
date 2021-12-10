@@ -397,13 +397,8 @@ body {
   -webkit-box-shadow: 0 0 50px 1px #6e6e6e;
           box-shadow: 0 0 50px 1px #6e6e6e;
   color: white;
-}
-
-@media only screen and (max-width: 500px) {
-  .popup-content {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 .popup-content.opened {
