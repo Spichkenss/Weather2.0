@@ -252,6 +252,8 @@ body
         border-radius: 10px
         box-shadow: 0 0 50px 1px rgb(110, 110, 110)
         color: white
+        +responsive(mobile)
+            transform: scale(0.8)
 
         &.opened 
             animation: zoom 0.2s linear

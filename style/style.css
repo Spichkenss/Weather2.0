@@ -399,6 +399,13 @@ body {
   color: white;
 }
 
+@media only screen and (max-width: 639px) {
+  .popup-content {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 .popup-content.opened {
   -webkit-animation: zoom 0.2s linear;
           animation: zoom 0.2s linear;
