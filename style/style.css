@@ -115,13 +115,6 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-height: 800px) {
-  .weather-window {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-}
-
 .weather-search {
   display: -webkit-box;
   display: -ms-flexbox;
